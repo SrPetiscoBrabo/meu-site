@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorteador de Dinossauros</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: #020617;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      width: 300px;
+    }
+
+    button {
+      background: #22c55e;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #16a34a;
+    }
+
+    .resultado {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    img {
+      margin-top: 25px;
+      width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>?? Sorteador de Dino ??</h1>
+    <button onclick="sortear()">Sortear</button>
+    <div class="resultado" id="resultado"></div>
+
+    <!-- FOTO DO GATO (IMPORTANTÍSSIMO) -->
+    <img 
+      src="mark.JPG"
+      alt="Gato misterioso observando dinossauros">
+  </div>
+
+  <script>
+    const dinossauros = [
+      "Tyrannosaurus Rex",
+      "Velociraptor",
+      "Triceratops",
+      "Brachiosaurus",
+      "Spinosaurus",
+      "Stegosaurus",
+      "Ankylosaurus",
+      "Pterodáctilo",
+      "Dilophosaurus",
+      "Allosaurus",
+       "Yoshi"
+  ];
+
+    function sortear() {
+      const indice = Math.floor(Math.random() * dinossauros.length);
+      document.getElementById("resultado").textContent =
+        "?? Saiu: " + dinossauros[indice];
+    }
+  </script>
+
+</body>
+</html>
