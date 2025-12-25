@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<html lang="pt-BR"><head>
   <meta charset="UTF-8">
   <title>Sorteador de Dinossauros</title>
   <style>
@@ -52,14 +51,12 @@
 <body>
 
   <div class="card">
-    <h1>🦕 Sorteador de Dino 🦖</h1>
+    <h1>🦖 Sorteador de Dino 🦕</h1>
     <button onclick="sortear()">Sortear</button>
     <div class="resultado" id="resultado"></div>
 
-    <!-- FOTO DO MARK (IMPORTANTÍSSIMO) -->
-    <img 
-      src="mark.JPG"
-      alt="Mark Zuckerberg misterioso observando dinossauros">
+    <!-- FOTO DO GATO (IMPORTANTÍSSIMO) -->
+    <img src="mark.JPG" alt="Mark sad...">
   </div>
 
   <script>
@@ -74,17 +71,17 @@
       "Pterodáctilo",
       "Dilophosaurus",
       "Allosaurus",
-       "Yoshi"
-       "Cauê"
-  
-];
+       "Yoshi",
+       "p.diddy",
+       "cauê"
+  ];
 
     function sortear() {
       const indice = Math.floor(Math.random() * dinossauros.length);
       document.getElementById("resultado").textContent =
-        🎲 Saiu: " + dinossauros[indice];
+        "🎲 Saiu: " + dinossauros[indice];
     }
   </script>
 
-</body>
-</html>
+
+</body></html>
